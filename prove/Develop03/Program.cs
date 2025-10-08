@@ -9,5 +9,11 @@ class Program
 
         Reference ref2 = new Reference("Proverbs", 3, 5, 6);
         Console.WriteLine(ref2.GetDisplayText());
+
+        //testint word class
+        word word = new word("Hope");
+        Console.WriteLine(word.GetDisplayText());
+        word.Hide();
+        Console.WriteLine(word.GetDisplayText());
     }
 }
