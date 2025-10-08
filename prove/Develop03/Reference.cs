@@ -1,9 +1,9 @@
 public class Reference
 {
-    string book;
-    int chapter;
-    int VStart
-    int VEnd
+    private string book;
+    private int chapter;
+    private int VStart;
+    private int VEnd;
     public Reference(string bookName, int chapterNum, int verseNum)
     {
         book = bookName;
