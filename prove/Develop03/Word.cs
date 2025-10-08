@@ -1,17 +1,17 @@
-public class word
+public class Word
 {
     private string text;
     private bool hidden;
-    public word(string wordT)
+    public Word(string wordT)
     {
-        text = wordT
+        text = wordT;
         hidden = false;
     }
     public void Hide()
     {
         hidden = true;
     }
-    public bool isHidden
+    public bool IsHidden()
     {
         return hidden;
     }
@@ -19,7 +19,7 @@ public class word
     {
         if (hidden == true)
         {
-            return (text.Length);
+            return new string('_', text.Length);
         }
         else
         {
