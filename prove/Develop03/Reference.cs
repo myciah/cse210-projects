@@ -8,25 +8,25 @@ public class Reference
     {
         book = bookName;
         chapter = chapterNum;
-        verseS = verseNum;
-        verseE = verseNum;
+        VStart = verseNum;
+        VEnd = verseNum;
     }
-    public Reference(string bookName, int chapterNum, int verseS, int verseE)
+    public Reference(string bookName, int chapterNum, int SVerse, int EVerse)
     {
         book = bookName;
         chapter = chapterNum;
-        verseS = verseS;
-        verseE = verseE;
+        VStart = SVerse;
+        VEnd = EVerse;
     }
     public string GetDisplayText()
     {
-        if (verseS == verseE)
+        if (VStart == VEnd)
         {
-            return book + "" + chapter + ":" + verseS.ToString();
+            return book + "" + chapter + ":" + VStart.ToString();
         }
         else
         {
-            return book + "" + chapter + ":" + verseS + "-" + verseE;
+            return book + "" + chapter + ":" + VStart + "-" + VEnd;
         }
     }
 }
