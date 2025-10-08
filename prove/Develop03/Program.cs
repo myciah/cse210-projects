@@ -11,7 +11,7 @@ class Program
         Console.WriteLine(ref2.GetDisplayText());
 
         //testint word class
-        word word = new word("Hope");
+        Word word = new Word("Hope");
         Console.WriteLine(word.GetDisplayText());
         word.Hide();
         Console.WriteLine(word.GetDisplayText());
