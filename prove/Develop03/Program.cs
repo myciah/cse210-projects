@@ -11,13 +11,14 @@ class Program
 
         Reference ref2 = new Reference("Proverbs", 3, 5, 6);
         //Console.WriteLine(ref2.GetDisplayText()); (was part of testing at first)
-        string verseT = "Trust in the Lord with all thine heart and lean not unto thine own understanding.";
+        string verseT = "Trust in the Lord with all thine heart and lean not unto thine own understanding; in all thy ways acknowledge him, and he shall direct thy paths";
 
         Scripture scripture = new Scripture(ref2, verseT);
         while (!scripture.AllWordHid())
         {
             Console.Clear();
             scripture.Display();
+            scripture.ranFact();
             Console.WriteLine("Press Enter to hide more words or type 'quit' to exit: ");
             string inp = Console.ReadLine();
             if (inp == "quit")

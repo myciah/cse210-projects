@@ -3,6 +3,12 @@ public class Scripture
     private Reference reference;
     private List<Word> words = new List<Word>();
     private Random random = new Random();
+    private List<string> scriptureFunFacts = new List<string>
+    {
+        "Proverbs has 31 wonderful chapters.",
+        "The Bible and Book of Mormon both teach of Christ!",
+        "The Bible contains many prophets teachings that can help one grow their testimony!"
+    };
     public Scripture(Reference refO, string verseT)
     {
         reference = refO;
@@ -41,5 +47,10 @@ public class Scripture
             Console.Write(words[i].GetDisplayText() + " ");
         }
         Console.WriteLine("\n");
+    }
+    public void ranFact()
+    {
+        int ind = random.Next(scriptureFunFacts.Count);
+        Console.WriteLine($"This is a fun fact about the bible: {scriptureFunFacts[ind]}");
     }
 }
