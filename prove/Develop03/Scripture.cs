@@ -6,12 +6,12 @@ public class Scripture
     public Scripture(Reference refO, string verseT)
     {
         reference = refO;
-        string[] splitW = verseT.Split(" ");
+        string[] splitW = verseT.Split(' ');
         for (int i = 0; i < splitW.Length; i++)
         {
             Word TWord;
             TWord = new Word(splitW[i]);
-            words.Add(splitW[i]);
+            words.Add(TWord);
         }
     }
     public void HideRanWord(int count)
@@ -24,14 +24,14 @@ public class Scripture
     }
     public bool AllWordHid()
     {
-        for (int i = 0;< words.Count; i++)
+        for (int i = 0; i < words.Count; i++)
         {
-            if (words[i].IsHidden == false)
+            if (!words[i].IsHidden())
             {
                 return false;
             }
         }
-        return true:
+        return true;
     }
     public void Display()
     {
