@@ -27,7 +27,7 @@ class Program
             scripture.HideRanWord(3);
         }
         Console.Clear();
-        Console.WriteLine("All the words have been hidden, hope you were able to leanr the scripture!");
+        Console.WriteLine("All the words have been hidden, hope you were able to learn the scripture!");
 
         //testing word class
         //Word word = new Word("Hope");

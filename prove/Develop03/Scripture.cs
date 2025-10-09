@@ -16,7 +16,7 @@ public class Scripture
     }
     public void HideRanWord(int count)
     {
-        for (int i = 0; i <= count; i++)
+        for (int i = 0; i < count; i++)
         {
             int ind = random.Next(words.Count);
             words[ind].Hide();
@@ -35,10 +35,11 @@ public class Scripture
     }
     public void Display()
     {
-        Console.WriteLine(reference.GetDisplayText());
+        Console.Write(reference.GetDisplayText() + "\n");
         for (int i = 0; i < words.Count; i++)
         {
-            Console.WriteLine(words[i].GetDisplayText());
+            Console.Write(words[i].GetDisplayText() + " ");
         }
+        Console.WriteLine("\n");
     }
 }
