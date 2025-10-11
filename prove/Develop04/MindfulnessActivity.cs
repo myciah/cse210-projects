@@ -13,7 +13,7 @@ public class MindfulnessActivity
     {
         for (int i = 0; i < seconds; i++)
         {
-            Console.Write("...");
+            Console.Write(".");
             Thread.Sleep(1000);
         }
         Console.WriteLine();
@@ -32,13 +32,16 @@ public class MindfulnessActivity
     public void Start()
     {
         Console.WriteLine($"Welcome to {name} activity.");
+        Thread.Sleep(2000);
         Console.WriteLine(description);
+        Thread.Sleep(2000);
         Console.WriteLine($"In seconds, how long would you like to do this activity for: ");
         duration = Convert.ToInt32(Console.ReadLine());
+        Thread.Sleep(2000);
         //duration = int Console.ReadLine();
         Console.WriteLine("The activity will start soon. Get Ready!!!");
         Thread.Sleep(2000);
-        ShowSpin(3);
+        ShowSpin(5);
     }
     public int GetDura()
     {
@@ -47,7 +50,10 @@ public class MindfulnessActivity
     public void End()
     {
         Console.WriteLine("Great Job!");
+        Thread.Sleep(2000);
+        ShowSpin(5);
         Console.WriteLine($"You did {name} activity for {duration} seconds. Well done!");
-        ShowSpin(3);
+        Thread.Sleep(2000);
+        ShowSpin(5);
     }
 }
