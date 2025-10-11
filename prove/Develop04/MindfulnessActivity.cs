@@ -14,20 +14,20 @@ public class MindfulnessActivity
         for (int i = 0; i < seconds; i++)
         {
             Console.Write("...");
-            Thread.Sleep(2000);
-            Console.WriteLine();
+            Thread.Sleep(1000);
         }
+        Console.WriteLine();
     }
     public void ShowCount(int seconds)
     {
-        for (int i = seconds; i > 0; i++)
+        for (int i = seconds; i > 0; i--)
         {
             Console.Write(i);
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
             Console.Write("\b \b"); // Erase the + character
-            Console.Write("-"); // Replace it with the - character
-            Console.WriteLine();
+            //Console.Write("-"); // Replace it with the - character
         }
+        Console.WriteLine();
     }
     public void Start()
     {
@@ -38,6 +38,7 @@ public class MindfulnessActivity
         //duration = int Console.ReadLine();
         Console.WriteLine("The activity will start soon. Get Ready!!!");
         Thread.Sleep(2000);
+        ShowSpin(3);
     }
     public int GetDura()
     {
@@ -47,5 +48,6 @@ public class MindfulnessActivity
     {
         Console.WriteLine("Great Job!");
         Console.WriteLine($"You did {name} activity for {duration} seconds. Well done!");
+        ShowSpin(3);
     }
 }
