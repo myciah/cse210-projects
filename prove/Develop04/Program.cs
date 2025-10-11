@@ -16,7 +16,11 @@ class Program
         //BTest.Running();
 
         //Testing ReflectinActivity.cs
-        ReflectingActivity RTest = new ReflectingActivity();
-        RTest.Running();
+        //ReflectingActivity RTest = new ReflectingActivity();
+        //RTest.Running();
+
+        //Testing ListingActivity.cs
+        ListingActivity LTest = new ListingActivity();
+        LTest.Running();
     }
 }
