@@ -11,10 +11,11 @@ public class MindfulnessActivity
     }
     public void ShowSpin(int seconds)
     {
-        for (int i = 0; i =< seconds; i++)
+        for (int i = 0; i < seconds; i++)
         {
-            Console.Write('');
+            Console.Write("...");
             Thread.Sleep(2000);
+            Console.WriteLine();
         }
     }
     public void ShowCount(int seconds)
@@ -25,6 +26,7 @@ public class MindfulnessActivity
             Thread.Sleep(2000);
             Console.Write("\b \b"); // Erase the + character
             Console.Write("-"); // Replace it with the - character
+            Console.WriteLine();
         }
     }
     public void Start()
