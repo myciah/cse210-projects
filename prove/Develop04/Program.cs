@@ -5,10 +5,14 @@ class Program
     static void Main(string[] args)
     {
         //Testing MindfulnessActivity.cs
-        MindfulnessActivity testA = new MindfulnessActivity("Testing", "Testing pt 2");
-        testA.Start();
-        Console.WriteLine("Working or not..");
-        testA.End();
-        testA.ShowCount(10);
+        //MindfulnessActivity testA = new MindfulnessActivity("Testing", "Testing pt 2");
+        //testA.Start();
+        //Console.WriteLine("Working or not..");
+        //testA.ShowCount(5);
+        //testA.End();
+
+        //Testing BreathingActivity.cs
+        BreathingActivity BTest = new BreathingActivity();
+        BTest.Running();
     }
 }
