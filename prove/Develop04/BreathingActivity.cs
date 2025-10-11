@@ -2,7 +2,7 @@
 public class BreathingActivity : MindfulnessActivity
 {
     public BreathingActivity()
-        : base("Breathing", "This activity will help you relax by helping you breath")
+        : base("Breathing", "This activity will help you relax by helping you breath in and out for certain periods of time.")
     {
     }
     public void Running()
@@ -15,6 +15,7 @@ public class BreathingActivity : MindfulnessActivity
             ShowCount(5);
             Console.WriteLine("Breathe out...");
             ShowCount(5);
+            time += 10;
         }
         End();
     }
