@@ -4,7 +4,7 @@ public class MindfulnessActivity
     public string name;
     public string description;
     public int duration;
-    public void Start
+    public void Start()
     {
         Console.WriteLine($"Welcome to {name} activity.")
         Console.WriteLine(description);
@@ -12,7 +12,7 @@ public class MindfulnessActivity
         duration = int Console.ReadLine();
     Console.WriteLine("The activity will start soon. Get Ready!!!");
     }
-    public void End
+    public void End()
     {
         Console.WriteLine("Great Job!");
         Console.WriteLine($"You did {name} activity for {duration} seconds. Well done!")
