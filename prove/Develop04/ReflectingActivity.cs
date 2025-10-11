@@ -28,14 +28,17 @@ public class ReflectingActivity : MindfulnessActivity
     {
         Start();
         Random choice = new Random();
-        Console.WriteLine(question(choice.Next(question)));
-        ShowSpin(5);
-        int time = 0
+        Console.WriteLine(question[choice.Next(question.Count)]);
+        Console.WriteLine("Please hit enter to continue.");
+        Console.WriteLine();
+        Console.ReadLine();
+        //ShowSpin(5);
+        int time = 0;
         while (time < GetDura())
         {
-            Console.WriteLine(DeepQues(choice.Next(DeepQues)));
-            ShowSpin(5);
-            time += 5
+            Console.WriteLine(DeepQues[choice.Next(DeepQues.Count)]);
+            ShowSpin(10);
+            time += 10;
         }
         End();
     }
