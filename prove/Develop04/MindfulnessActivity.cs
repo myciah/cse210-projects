@@ -4,10 +4,10 @@ public class MindfulnessActivity
     public string name;
     public string description;
     public int duration;
-    public MindfulnessActivity(string activityName)
+    public MindfulnessActivity(string title, string desc)
     {
-        name = activityName;
-        description = "Testing";
+        name = title;
+        description = desc;
     }
     public void Start()
     {
@@ -18,6 +18,10 @@ public class MindfulnessActivity
         //duration = int Console.ReadLine();
         Console.WriteLine("The activity will start soon. Get Ready!!!");
         Thread.Sleep(2000);
+    }
+    public int GetDura()
+    {
+        return duration;
     }
     public void End()
     {
