@@ -9,6 +9,24 @@ public class MindfulnessActivity
         name = title;
         description = desc;
     }
+    public void ShowSpin(int seconds)
+    {
+        for (int i = 0; i =< seconds; i++)
+        {
+            Console.Write('');
+            Thread.Sleep(2000);
+        }
+    }
+    public void ShowCount(int seconds)
+    {
+        for (int i = seconds; i > 0; i++)
+        {
+            Console.Write(i);
+            Thread.Sleep(2000);
+            Console.Write("\b \b"); // Erase the + character
+            Console.Write("-"); // Replace it with the - character
+        }
+    }
     public void Start()
     {
         Console.WriteLine($"Welcome to {name} activity.");
