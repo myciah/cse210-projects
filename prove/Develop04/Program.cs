@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop04 World!");
+        //Testing MindfulnessActivity.cs
+        MindfulnessActivity testA = new MindfulnessActivity("Testing");
+        testA.Start();
+        Console.WriteLine("Working or not..");
+        testA.End(); 
     }
 }
