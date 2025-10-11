@@ -16,29 +16,30 @@ class Program
             Console.WriteLine("Please choose an activity to do: ");
             string option = Console.ReadLine();
 
-            if (option == 1)
+            if (option == "1")
             {
                 BreathingActivity BTest = new BreathingActivity();
                 BTest.Running();
             }
-            else if (option == 2)
+            else if (option == "2")
             {
                 ReflectingActivity RTest = new ReflectingActivity();
                 RTest.Running();
             }
-            else if (option == 3)
+            else if (option == "3")
             {
                 ListingActivity LTest = new ListingActivity();
                 LTest.Running();
             }
-            else if (option == 4)
+            else if (option == "4")
             {
                 Console.WriteLine("Have a good day! See you next time!");
-                break;
+                run = false;
             }
             else
             {
                 Console.WriteLine("Please select an option (1-4).");
+                Thread.Sleep(3000);
             }
 
         }
