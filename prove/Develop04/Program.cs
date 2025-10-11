@@ -12,7 +12,11 @@ class Program
         //testA.End();
 
         //Testing BreathingActivity.cs
-        BreathingActivity BTest = new BreathingActivity();
-        BTest.Running();
+        //BreathingActivity BTest = new BreathingActivity();
+        //BTest.Running();
+
+        //Testing ReflectinActivity.cs
+        ReflectingActivity RTest = new ReflectingActivity();
+        RTest.Running();
     }
 }
