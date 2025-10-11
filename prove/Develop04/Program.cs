@@ -12,7 +12,8 @@ class Program
             Console.WriteLine("1. Breathing Activity");
             Console.WriteLine("2. Reflecting Activity");
             Console.WriteLine("3. Listing Activity");
-            Console.WriteLine("4. Quit");
+            Console.WriteLine("4. Gratitude Activity");
+            Console.WriteLine("5. Quit");
             Console.WriteLine("Please choose an activity to do: ");
             string option = Console.ReadLine();
 
@@ -33,12 +34,17 @@ class Program
             }
             else if (option == "4")
             {
+                GratitudeActivity GTest = new GratitudeActivity();
+                GTest.Running();
+            }
+            else if (option == "5")
+            {
                 Console.WriteLine("Have a good day! See you next time!");
                 run = false;
             }
             else
             {
-                Console.WriteLine("Please select an option (1-4).");
+                Console.WriteLine("Please select an option (1-5).");
                 Thread.Sleep(3000);
             }
 
