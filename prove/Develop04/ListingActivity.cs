@@ -24,9 +24,11 @@ public class ListingActivity : MindfulnessActivity
         DateTime ETime = DateTime.Now.AddSeconds(GetDura());
         while (DateTime.Now < ETime)
         {
+            Console.Write(">");
             string totals = Console.ReadLine();
             total.Add(totals);
         }
-        Console.WriteLine($"You have {total.Count} listed.");
+        Console.WriteLine($"You have {total.Count} items listed.");
+        End();
     }
 }
