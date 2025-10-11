@@ -14,7 +14,7 @@ class Program
             Console.WriteLine("3. Listing Activity");
             Console.WriteLine("4. Gratitude Activity");
             Console.WriteLine("5. Quit");
-            Console.WriteLine("Please choose an activity to do: ");
+            Console.Write("Please choose an activity to do: ");
             string option = Console.ReadLine();
 
             if (option == "1")

@@ -11,8 +11,11 @@ public class GratitudeActivity : MindfulnessActivity
         ShowSpin(5);
         Console.WriteLine("Picture it in your head.");
         ShowSpin(5);
+        ShowCount(duration);
         Console.Write("What is it you are grateful for? ");
         string reply = Console.ReadLine();
         Console.WriteLine($"{reply} is an amazing thing to be grateful for!");
+        Thread.Sleep(3000);
+        End();
     }
 }
