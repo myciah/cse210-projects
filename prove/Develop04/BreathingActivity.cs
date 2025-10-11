@@ -2,21 +2,22 @@
 public class BreathingActivity : MindfulnessActivity
 {
     public BreathingActivity()
-        : base("Breathing", "his activity will help you relax by helping you breath")
+        : base("Breathing", "This activity will help you relax by helping you breath")
     {
+    }
     public void Running()
     {
-        Start;
+        Start();
         int time = 0;
         while (time < GetDura())
         {
             Console.WriteLine("Breath in...");
-            ShowCount();
+            ShowCount(5);
             Console.WriteLine("Breathe out...");
-            ShowCount();
+            ShowCount(5);
         }
-        End;
+        End();
     }
-    }
+    
 }
 
