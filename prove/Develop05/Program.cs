@@ -15,13 +15,13 @@ class program
 {
     static void Main()
     {
-        SimpleGoal SGoal = new SimpleGoal("Read Scriptures", "Read chapter today", 10)
-        Console.Write("Goal Detail: ");
-        Console.Write(SGoal.GetDetail());
-        Console.Write($"Goal Complete? {SGoal.IsComplete()}");
+        SimpleGoal SGoal = new SimpleGoal("Read Scriptures", "Read chapter today", 10);
+        Console.WriteLine("Goal Detail: ");
+        Console.WriteLine(SGoal.GetDetail());
+        Console.WriteLine($"Goal Complete? {SGoal.IsComplete()}");
         int PE = SGoal.RecordEvent();
-        Console.Write($"Points: {PE}");
-        Console.Write($"Is goal complete? {SGoal.IsComplete()}");
-        Console.Write($"Goal Update: {SGoal.GetUpdate()}");
+        Console.WriteLine($"Points: {PE}");
+        Console.WriteLine($"Is goal complete? {SGoal.IsComplete()}");
+        Console.WriteLine($"Goal Update: {SGoal.GetUpdate()}");
     }
 }

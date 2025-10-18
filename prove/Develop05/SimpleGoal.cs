@@ -9,26 +9,26 @@ class SimpleGoal : Goal
     public override int RecordEvent()
     {
         _c = true;
-        Console.WriteLine($"Goal Complete!! {points} points");
-        return points;
+        Console.WriteLine($"Goal Complete!! {_p} points");
+        return _p;
     }
     public override bool IsComplete()
     {
-        return c;
+        return _c;
     }
     public override string GetUpdate()
     {
-        if (_c = true)
+        if (_c == true)
         {
-            return ($"[X] {name}")
+            return ($"[X] {_n}");
         }
         else
         {
-            return ($"[] {name}")
+            return ($"[] {_n}");
         }
     }
     public override string GetDetail()
     {
-        ($"{name} - {description} {points} pts");
+        return ($"{_n} - {_d} {_p} pts");
     }
 }
