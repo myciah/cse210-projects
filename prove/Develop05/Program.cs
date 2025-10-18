@@ -21,12 +21,12 @@ class program
         Console.WriteLine($"Complete? {RS.IsComplete()}");
         Console.WriteLine("Recording....");
         int EP = RS.RecordEvent();
-        Console.WriteLine($"Earned: {EP}")
-        Console.WriteLine("After Event: ")
-        Console.WriteLine("Update {RS.getUpdate()}");
+        Console.WriteLine($"Earned: {EP}");
+        Console.WriteLine("After Event: ");
+        Console.WriteLine($"Update {RS.GetUpdate()}");
         Console.WriteLine($"Complete? {RS.IsComplete()}");
         Console.WriteLine("Test again...");
         RS.RecordEvent();
-        Console.WriteLine($"Complete x2? (RS.IsComplete())");
+        Console.WriteLine($"Complete x2? {RS.IsComplete()}");
     }
 }

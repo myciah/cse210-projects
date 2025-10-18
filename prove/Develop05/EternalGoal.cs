@@ -7,18 +7,18 @@ class EternalGoal : Goal
     public override int RecordEvent()
     {
         Console.WriteLine($"Eternal Goal is recorded!! {_p} points");
-        return points;
+        return _p;
     }
     public override bool IsComplete()
     {
-        return isComplete;
+        return false;
     }
-    public override string GetUpdate();
+    public override string GetUpdate()
     {
         return ($"[X] {_n}");
     }
     public override string GetDetail()
     {
-        return ($"{name} - {description} {points} pts");
+        return ($"{_n} - {_d} {_p} pts");
     }
-}}
+}
