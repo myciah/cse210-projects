@@ -1,5 +1,3 @@
-using System.Runtime.CompilerServices;
-
 class GoalManager
 {
     private List<Goal> _go = new List<Goal>();
@@ -7,7 +5,7 @@ class GoalManager
     public void AddGoal(Goal go)
     {
         _go.Add(go);
-        Console.WriteLine("Goal added: {go}");
+        //Console.WriteLine("Goal added: {go}");
     }
     public void RecordEvent(int ind)
     {
@@ -16,31 +14,41 @@ class GoalManager
             Console.WriteLine("Invalid...");
             return;
         }
-        Goal go = _go[ind];
-        int points = go.RecordEvent();
-        _s = +points;
-        Console.WriteLine($"Event recorded for the goal: {ind}");
+        int poi = _go[ind - 1].RecordEvent();
+        _s = _s + poi;
+        // Goal go = _go[ind];
+        // int points = go.RecordEvent();
+        // _s = +points;
+        // Console.WriteLine($"Event recorded for the goal: {ind}");
     }
     public void DisplayGo()
     {
         Console.WriteLine("Goals: ");
-        foreach (Goal go in _go)
+        for (int i = 0; i < _go.Count; i++)
         {
-            Console.WriteLine(go.GetUpdate());
+            Console.WriteLine($"{i + 1} . {_go[i].GetUpdate()}");
         }
+        // foreach (Goal go in _go)
+        // {
+        //     Console.WriteLine(go.GetUpdate());
+        // }
     }
     public void DisplaySc()
     {
-        Console.WriteLine(Totoal: { _s});
+        Console.WriteLine($"Totoal: { _s}");
     }
     public void SaveGo(string filename)
     {
         StreamWriter wri = new StreamWriter(filename);
         wri.WriteLine(_s);
-        foreach (Goal go in _go)
+        for (int i = 0; i < _go.Count; i++)
         {
-            wri.WriteLine(go.ToString());
+            wri.WriteLine(_go[i].GetDetail());
         }
+        // foreach (Goal go in _go)
+        // {
+        //     wri.WriteLine(go.ToString());
+        // }
         wri.Close();
         Console.WriteLine($"Goals have been saved to {filename}");
     }
@@ -53,8 +61,8 @@ class GoalManager
         }
         StreamReader re = new StreamReader(filename);
         string li = re.ReadLine();
-        int.TryParse(li, _s);
-        while (li = re.ReadLine() != null)
+        int.TryParse(li, out _s);
+        while ((li = re.ReadLine()) != null)
         {
             Console.WriteLine($"Loaded the goal: {li}");
         }

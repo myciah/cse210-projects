@@ -15,9 +15,9 @@ class program
     static void Main()
     {
         GoalManager man = new GoalManager();
-        SimpleGoal g1 SimpleGoal("Reading", "Read Chapter", 10);
-        EternalGoal g2 EternalGoal("Eat Healthy", "Drink Water", 5);
-        CheckListGoal g3 CheckListGoal("Exercise", "Leg Day", 15);
+        SimpleGoal g1 = new SimpleGoal("Reading", "Read Chapter", 10);
+        EternalGoal g2 = new EternalGoal("Eat Healthy", "Drink Water", 5);
+        CheckListGoal g3 = new CheckListGoal("Exercise", "Leg Day", 15, 3, 40);
         man.AddGoal(g1);
         man.AddGoal(g2);
         man.AddGoal(g3);
