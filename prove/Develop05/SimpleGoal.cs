@@ -1,5 +1,3 @@
-using System.Drawing;
-
 class SimpleGoal : Goal
 {
     private bool _c;
