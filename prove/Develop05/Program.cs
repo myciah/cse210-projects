@@ -14,7 +14,8 @@ class Program
             Console.WriteLine("4. Show Score");
             Console.WriteLine("5. Save Goals");
             Console.WriteLine("6. Load Goals");
-            Console.WriteLine("7. Exit");
+            Console.WriteLine("7. Goal Ideas")
+            Console.WriteLine("8. Exit");
             Console.Write("Choose an option: ");
             string option = Console.ReadLine();
 
@@ -43,6 +44,10 @@ class Program
                 LoadGo(man);
             }
             else if (option == "7")
+            {
+                _i.DisplayId();
+            }
+            else if (option == "8")
             {
                 running = false;
             }
