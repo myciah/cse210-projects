@@ -24,7 +24,7 @@ class CheckListGoal : Goal
             return _p + _b;
         }
         Console.WriteLine($"Progress recorded! {_p}");
-        return _p
+        return _p;
     }
     public override bool IsComplete()
     {
