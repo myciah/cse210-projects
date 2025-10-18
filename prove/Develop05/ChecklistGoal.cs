@@ -7,28 +7,32 @@ class CheckListGoal : Goal
         : base(name, description, points)
     {
         _TargetC = TC;
-        _CurrentC = 1;
+        _CurrentC = 0;
         _b = bounus;
     }
     public override int RecordEvent()
     {
+        _CurrentC = _CurrentC + 1;
         if (_CurrentC > _TargetC)
         {
             Console.WriteLine("Finished");
             return 0;
         }
-        _CurrentC++;
-        if (_CurrentC == _TargetC)
+
+        else if (_CurrentC == _TargetC)
         {
             Console.WriteLine($"Checklist goal complete. Bonus: {_b} pts");
             return _p + _b;
         }
-        Console.WriteLine($"Progress recorded! {_p}");
-        return _p;
+        else
+        {
+            Console.WriteLine($"Progress recorded! {_p}");
+            return _p;
+        }
     }
     public override bool IsComplete()
     {
-        return _CurrentC == _TargetC;
+        return _CurrentC >= _TargetC;
     }
     public override string GetUpdate()
     {
