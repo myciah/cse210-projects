@@ -61,11 +61,11 @@ class Program
         string na = Console.ReadLine();
         Console.Write("Description: ");
         string des = Console.ReadLine();
-        string points = HowMany("How many points does this goal get? ");
+        int points = HowMany("How many points does this goal get? ");
 
         if (ty == "simple")
         {
-            SimpleGoal SG =  SimpleGoal(na, des, points);
+            SimpleGoal SG =  new SimpleGoal(na, des, points);
             man.AddGoal(SG);
             Console.WriteLine("A simple goal was created.");
         }
@@ -79,7 +79,7 @@ class Program
         {
             int Tar = HowMany("How many times do you need to complete? ");
             int Bon = HowMany("Bonus points??? ");
-            CheckListGoal CG = new CheckListGoal(na, des, point, Tar, Bon);
+            CheckListGoal CG = new CheckListGoal(na, des, points, Tar, Bon);
             man.AddGoal(CG);
             Console.WriteLine("Checklist goal has been created.");
         }
@@ -106,11 +106,11 @@ class Program
         string filename = Console.ReadLine();
         man.LoadGo(filename);
     }
-    static string HowMany(string quest)
+    static int HowMany(string quest)
     {
         while (true)
         {
-            Console.Write(Quest);
+            Console.Write(quest);
             string inp = Console.ReadLine();
             int value;
             if (int.TryParse(inp, out value))
