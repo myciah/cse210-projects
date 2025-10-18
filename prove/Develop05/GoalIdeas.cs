@@ -15,7 +15,7 @@ class GoalIdeas
     };
     public void DisplayId()
     {
-        Console.WriteLine("Hera are some goal ideads you could use: ");
+        Console.WriteLine("Here are some goal ideads you could use: ");
         for (int i = 0; i < _i.Count; i++)
         {
             Console.WriteLine($"{i + 1}. {_i[i]}");
