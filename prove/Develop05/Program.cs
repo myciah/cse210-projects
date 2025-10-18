@@ -3,10 +3,13 @@ class Program
 {
     static void Main(string[] args)
     {
+        GoalIdeas I = new GoalIdeas();
         GoalManager man = new GoalManager();
         bool running = true;
         while (running)
         {
+            Thread.Sleep(3000);
+            Console.WriteLine();
             Console.WriteLine("Eternal Quest Menu");
             Console.WriteLine("1. Create New Goal");
             Console.WriteLine("2. Record Event");
@@ -14,10 +17,11 @@ class Program
             Console.WriteLine("4. Show Score");
             Console.WriteLine("5. Save Goals");
             Console.WriteLine("6. Load Goals");
-            Console.WriteLine("7. Goal Ideas")
+            Console.WriteLine("7. Goal Ideas");
             Console.WriteLine("8. Exit");
             Console.Write("Choose an option: ");
             string option = Console.ReadLine();
+            Console.WriteLine();
 
             if (option == "1")
             {
@@ -45,7 +49,7 @@ class Program
             }
             else if (option == "7")
             {
-                _i.DisplayId();
+                I.DisplayId();
             }
             else if (option == "8")
             {
