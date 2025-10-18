@@ -35,7 +35,7 @@ class GoalManager
     }
     public void DisplaySc()
     {
-        Console.WriteLine($"Totoal: { _s}");
+        Console.WriteLine($"Totoal: {_s}");
     }
     public void SaveGo(string filename)
     {
@@ -69,3 +69,35 @@ class GoalManager
         re.Close();
     }
 }
+
+
+//The following lines of code are the ones that I used to test in program.cs to see if the GoalManager.cs code functions as supposed to.
+// class program
+// {
+//     static void Main()
+//     {
+//         GoalManager man = new GoalManager();
+//         SimpleGoal g1 = new SimpleGoal("Reading", "Read Chapter", 10);
+//         EternalGoal g2 = new EternalGoal("Eat Healthy", "Drink Water", 5);
+//         CheckListGoal g3 = new CheckListGoal("Exercise", "Leg Day", 15, 3, 40);
+//         man.AddGoal(g1);
+//         man.AddGoal(g2);
+//         man.AddGoal(g3);
+//         Console.WriteLine("Goals");
+//         man.DisplayGo();
+//         man.DisplaySc();
+//         Console.WriteLine("Recording events");
+//         man.RecordEvent(1);
+//         man.RecordEvent(2);
+//         man.RecordEvent(3);
+//         man.RecordEvent(3);
+//         man.RecordEvent(3);
+//         Console.WriteLine("After Recording");
+//         man.DisplayGo();
+//         man.DisplaySc();
+//         Console.WriteLine("Saving to file");
+//         man.SaveGo("go.txt");
+//         Console.WriteLine("Loading goals");
+//         man.LoadGo("go.txt");
+//     }
+// }
