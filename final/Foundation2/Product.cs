@@ -33,3 +33,19 @@ public class Product
         return _priceUnit * _quantity;
     }
 }
+
+//The following code was used to test Product.cs in Program.cs
+// class Program
+// {
+//      static void Main(string[] args)
+//     {
+//         Product P = new Product("Roller Blades", "XXX123", 122.99, 1);
+//         Console.WriteLine($"Product Name: {P.GName()}");
+//         Console.WriteLine($"Product ID: {P.GProductId()}");
+//         Console.WriteLine($"Product Price: {P.GPrice()}");
+//         Console.WriteLine($"Product Quantity: {P.GQuantity()}");
+//         Console.WriteLine($"Total: {P.GTotCost()}");
+
+//     }
+
+// }
