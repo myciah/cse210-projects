@@ -9,14 +9,14 @@ public class Customer
     }
     public string GName()
     {
-        return name;
+        return _name;
     }
     public Address GAddress()
     {
-        return address;
+        return _address;
     }
     public bool LivesUSA()
     {
-        return Address.USA();
+        return _address.USA();
     }
 }
