@@ -16,3 +16,15 @@ public class Comment
         return comText;
     }
 }
+
+//Next lines of code were used to test the comment class in program.cs:
+// using System;
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Comment TC = new Comment("John", "This is a test!");
+//         Console.WriteLine($"Name: {TC.GComName()}");
+//         Console.WriteLine($"Text: {TC.GComText()}");
+//     }
+// }
