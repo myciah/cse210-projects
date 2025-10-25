@@ -1,34 +1,35 @@
-Public class Product
+public class Product
 {
-    Private string name
-    private string productId
-    Private double priceUnit
-    private int quantity
-    public Product(string Name, string productID, double PriceUnit, int Quantity)
+    private string _name;
+    private string _productId;
+    private double _priceUnit;
+    private int _quantity;
+    public Product(string name, string productId, double priceUnit, int quantity)
     {
-        name = Name;
-        productID = ProductID;
-        priceUnit = PriceUnit;
-        quantitiy = Quantity;
+        _name = name;
+        _productId = productId;
+        _priceUnit = priceUnit;
+        _quantity = quantity;
     }
+
     public string GName()
     {
-        return Name;
+        return _name;
     }
     public string GProductId()
     {
-        return ProductId;
+        return _productId;
     }
     public double GPrice()
     {
-        return priceUnit;
+        return _priceUnit;
     }
     public int GQuantity()
     {
-        return Quantity;
+        return _quantity;
     }
     public double GTotCost()
     {
-        return PriceUnit * Quantity;
+        return _priceUnit * _quantity;
     }
 }
