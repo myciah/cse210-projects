@@ -2,7 +2,7 @@ public class Comment
 {
     private string comName;
     private string comText;
-    public comment(string Name, string Text)
+    public Comment(string Name, string Text)
     {
         comName = Name;
         comText = Text;

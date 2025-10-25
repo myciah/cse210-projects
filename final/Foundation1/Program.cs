@@ -12,9 +12,10 @@ using System;
 using System;
 class Program
 {
-    static void Main(string[] )args){
+    static void Main(string[] args)
+    {
         Comment TC = new Comment("John", "This is a test!");
-        Console.WriteLine($"Name: {TC.GComName}");
-        Console.WriteLine($"Text: {TC.GComText}");
+        Console.WriteLine($"Name: {TC.GComName()}");
+        Console.WriteLine($"Text: {TC.GComText()}");
     }
 }
