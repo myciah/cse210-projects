@@ -1,12 +1,12 @@
-public class ideo
+public class Video
 {
     private string title;
     private string author;
     private int TimeSeconds;
     private List<Comment> comments;
-    public Video(string Tilte, string Authot, int Time)
+    public Video(string Title, string Author, int Time)
     {
-        title = Title
+        title = Title;
         author = Author;
         TimeSeconds = Time;
         comments = new List<Comment>();
@@ -14,7 +14,7 @@ public class ideo
     }
     public void ACom(Comment comment)
     {
-        comment.Add(comment);
+        comments.Add(comment);
     }
     public int GComCount()
     {
@@ -31,5 +31,9 @@ public class ideo
     public List<Comment> GComments()
     {
         return comments;
+    }
+    public int GLength()
+    {
+        return TimeSeconds;
     }
 }
