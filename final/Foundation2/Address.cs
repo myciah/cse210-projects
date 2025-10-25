@@ -3,7 +3,7 @@ public class Address
     private string _street;
     private string _city;
     private string _stateProv;
-    private string country;
+    private string _country;
     public Address(string street, string city, string StateProv, string country)
     {
         _street = street;
@@ -13,7 +13,7 @@ public class Address
     }
     public bool USA()
     {
-        return _country;
+        return _country == "USA";
     }
     public string GFullAddress()
     {
