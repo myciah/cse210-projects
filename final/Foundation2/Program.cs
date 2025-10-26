@@ -1,28 +1,29 @@
 using System;
 
-// class Program
-// {
-//     static void Main(string[] args)
-//     {
-//         Console.WriteLine("Hello Foundation2 World!");
-//     }
-// }
-
-//Code used to test Order.cs
 class Program
-{
+ {
      static void Main(string[] args)
-    {
-        Address A = new Address("123 XXX st", "Arlington", "VA", "USA");
-        Customer C = new Customer("Breanna Russ", A);
-        Order O = new Order(C);
-        Product P1 = new Product("Book", "XYZ", 4.50, 2);
-        Product P2 = new Product("Pen", "QWZ123", 1.05, 7);
-        O.AProduct(P1);
-        O.AProduct(P2);
-        Console.WriteLine(O.GPackLabel());
-        Console.WriteLine(O.GShippLabel());
-        Console.WriteLine($"Total Cost: $ {O.GTotCost()}");
-    }
+     {
+        Address A1 = new Address("123 AAA st", "Rexburg", "ID", "USA");
+        Customer C1 = new Customer("Allie Shepherd", A1);
+        Order O1 = new Order(C1);
+        O1.AProduct(new Product("Dress", "11AAA", 45.85, 1));
+        O1.AProduct(new Product("Shoes", "AAA22", 22.55, 2));
+        Console.WriteLine(O1.GPackLabel());
+        Console.WriteLine(O1.GShippLabel());
+        Console.WriteLine($"Total Cost: $ {O1.GTotCost()}");
+        Console.WriteLine();
+        Address A2 = new Address("456 BBB st", "Zhengzhou", "Henan", "China");
+        Customer C2 = new Customer("Shi-wei Zhu", A2);
 
-}
+        Order O2 = new Order(C2);
+        O2.AProduct(new Product("Ring", "70v3R", 2510.99, 2));
+        O2.AProduct(new Product("Suit", "2u17t", 55.65, 4));
+        O2.AProduct(new Product("Plane Ticket", "Fly189", 505.00, 1));
+        Console.WriteLine(O2.GPackLabel());
+        Console.WriteLine(O2.GShippLabel());
+        Console.WriteLine($"Total Cost: $ {O2.GTotCost()}");
+        Console.WriteLine();
+     }
+ }
+
