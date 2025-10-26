@@ -29,16 +29,16 @@ public class Order
     }
     public string GPackLabel()
     {
-        string label = "Packing Label: ";
+        string label = "Packing Label:\n ";
         foreach (Product product in _products)
         {
-            label += $"{product.GName()} {product.GProductId()}";
+            label += $"{product.GName()} ({product.GProductId()})\n";
         }
         return label;
     }
     public string GShippLabel()
     {
-        return $"Shipping Label: {_customer.GName()}  {_customer.GAddress().GFullAddress()}";
+        return $"Shipping Label: \n{_customer.GName()} \n{_customer.GAddress().GFullAddress()}";
     }
 }
 

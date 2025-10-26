@@ -17,7 +17,7 @@ public class Address
     }
     public string GFullAddress()
     {
-        return ($"{_street} - {_city} - {_stateProv} - {_country}");
+        return ($"{_street}\n{_city}, {_stateProv}\n{_country}");
     }
 }
 
