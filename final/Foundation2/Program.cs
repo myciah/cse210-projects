@@ -15,7 +15,6 @@ class Program
         Console.WriteLine();
         Address A2 = new Address("456 BBB st", "Zhengzhou", "Henan", "China");
         Customer C2 = new Customer("Shi-wei Zhu", A2);
-
         Order O2 = new Order(C2);
         O2.AProduct(new Product("Ring", "70v3R", 2510.99, 2));
         O2.AProduct(new Product("Suit", "2u17t", 55.65, 4));
