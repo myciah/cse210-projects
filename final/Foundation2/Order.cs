@@ -1,10 +1,10 @@
 public class Order
 {
     private List<Product> _products = new List<Product>();
-    private Customer _cutsomer;
+    private Customer _customer;
     public Order(Customer customer)
     {
-        _cutsomer = customer;
+        _customer = customer;
     }
     public void AProduct(Product product)
     {
@@ -12,11 +12,12 @@ public class Order
     }
     public double GTotCost()
     {
+        double total = 0;
         foreach (Product product in _products)
         {
             total += product.GTotCost();
         }
-        if (_cutsomer.LivesUSA())
+        if (_customer.LivesUSA())
         {
             total += 5;
         }
@@ -28,15 +29,15 @@ public class Order
     }
     public string GPackLabel()
     {
-        string label = "Packing Label";
-        for (Product product in _products)
+        string label = "Packing Label: ";
+        foreach (Product product in _products)
         {
-            label += ($"{product.GName()} {product.GProductId}");
+            label += $"{product.GName()} {product.GProductId()}";
         }
         return label;
     }
     public string GShippLabel()
     {
-        return ($"Shipping Label: {customer.GName()} - {customer.GAddress().GFullAddress()}");
+        return $"Shipping Label: {_customer.GName()}  {_customer.GAddress().GFullAddress()}";
     }
 }
