@@ -22,7 +22,7 @@ class Program
         O.AProduct(P2);
         Console.WriteLine(O.GPackLabel());
         Console.WriteLine(O.GShippLabel());
-        Console.WriteLine($"Total Cost: $ {O.GTotCost}");
+        Console.WriteLine($"Total Cost: $ {O.GTotCost()}");
     }
 
 }
