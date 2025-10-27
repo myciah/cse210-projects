@@ -15,6 +15,6 @@ public abstract class Event
     }
     public string GStandard()
     {
-        return ($"");
+        return ($"Title: {_title} - Description: {_desc} - Date: {_date} - Time: {_time} - Address: {_addr}");
     }
 }
