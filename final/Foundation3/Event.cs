@@ -1,17 +1,20 @@
 public abstract class Event
 {
     private string _title;
-    private string desc;
+    private string _desc;
+    private string _date;
     private string _time;
-    public Event(string title, string, desc, string date, string time)
+    private string _addr;
+    public Event(string title, string desc, string date, string time, string addr)
     {
         _title = title;
         _desc = desc;
         _date = date;
         _time = time;
+        _addr = addr;
     }
     public string GStandard()
     {
-        return ($"")
+        return ($"");
     }
 }
