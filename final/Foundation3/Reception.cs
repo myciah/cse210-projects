@@ -7,7 +7,7 @@ public class Reception : Event
         _rsvpEmail = rsvpEmail;
         _eventType = "Reception";
     }
-    public string GFullReception()
+    public override string GFull()
     {
         return ($"{GStandard()} - Type: {_eventType} - RSVP Email: {_rsvpEmail}");
     }

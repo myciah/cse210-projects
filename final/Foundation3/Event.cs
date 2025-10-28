@@ -18,10 +18,10 @@ public abstract class Event
     {
         return ($"Title: {_title} - Description: {_desc} - Date: {_date} - Time: {_time} - Address: {_addr.GFullAddr()}");
     }
-    public string GFull()
-    {
-        return ($"Title: {_title} - Description: {_desc} - Date: {_date} - Time: {_time} - Address: {_addr.GFullAddr()} - Type: {_eventType}");
-    }
+    public abstract string GFull();
+    // {
+    //     return ($"Title: {_title} - Description: {_desc} - Date: {_date} - Time: {_time} - Address: {_addr.GFullAddr()} - Type: {_eventType}");
+    // }
     public string GShort()
     {
         return ($"Type: {_eventType} - Title: {_title} - Date: {_date}");

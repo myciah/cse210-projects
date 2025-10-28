@@ -9,9 +9,9 @@ public class Lecture : Event
         _capacity = capacity;
         _eventType = "Lecture";
     }
-    public string GFullLecture()
+    public override string GFull()
     {
-        return ($"{GStandard()} - Type (Lecture) Speaker: {_speaker} - Capacity: {_capacity}");
+        return ($"{GStandard()} - Type: {_eventType} - Speaker: {_speaker} - Capacity: {_capacity}");
     }
 }
 

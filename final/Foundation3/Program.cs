@@ -24,7 +24,7 @@ class Program
             Console.WriteLine(i.GStandard());
             Console.WriteLine();
             Console.WriteLine("Full Details: ");
-            Console.WriteLine("Blank");
+            Console.WriteLine(i.GFull());
             Console.WriteLine();
             Console.WriteLine("Short Description: ");
             Console.WriteLine(i.GShort());
