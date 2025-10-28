@@ -17,5 +17,6 @@ using System;
         Lecture TL = new Lecture("Heidi Russell", 45, "Cosplay101", "Intro to cosplay", "10-27-2025", "6 pm", TA);
         Console.WriteLine(TL.GStandard());
         Console.WriteLine(TL.GFullLecture());
+        Console.WriteLine(TL.GShort());
      }
  }
