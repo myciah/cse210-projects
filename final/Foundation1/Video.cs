@@ -1,40 +1,40 @@
 public class Video
 {
-    private string title;
-    private string author;
-    private int TimeSeconds;
-    private List<Comment> comments;
+    private string _title;
+    private string _author;
+    private int _timeSeconds;
+    private List<Comment> _comments;
     public Video(string Title, string Author, int Time)
     {
-        title = Title;
-        author = Author;
-        TimeSeconds = Time;
-        comments = new List<Comment>();
+        _title = Title;
+        _author = Author;
+        _timeSeconds = Time;
+        _comments = new List<Comment>();
 
     }
     public void ACom(Comment comment)
     {
-        comments.Add(comment);
+        _comments.Add(comment);
     }
     public int GComCount()
     {
-        return comments.Count;
+        return _comments.Count;
     }
     public string GTitle()
     {
-        return title;
+        return _title;
     }
     public string GAuthor()
     {
-        return author;
+        return _author;
     }
     public List<Comment> GComments()
     {
-        return comments;
+        return _comments;
     }
     public int GLength()
     {
-        return TimeSeconds;
+        return _timeSeconds;
     }
 }
 

@@ -1,19 +1,19 @@
 public class Comment
 {
-    private string comName;
-    private string comText;
+    private string _comName;
+    private string _comText;
     public Comment(string Name, string Text)
     {
-        comName = Name;
-        comText = Text;
+        _comName = Name;
+        _comText = Text;
     }
     public string GComName()
     {
-        return comName;
+        return _comName;
     }
     public string GComText()
     {
-        return comText;
+        return _comText;
     }
 }
 
