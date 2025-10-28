@@ -16,14 +16,11 @@ public abstract class Event
     }
     public string GStandard()
     {
-        return ($"Title: {_title} - Description: {_desc} - Date: {_date} - Time: {_time} - Address: {_addr.GFullAddr()}");
+        return ($"Title: {_title} \nDescription: {_desc} \nDate: {_date} \nTime: {_time} \nAddress: {_addr.GFullAddr()}");
     }
     public abstract string GFull();
-    // {
-    //     return ($"Title: {_title} - Description: {_desc} - Date: {_date} - Time: {_time} - Address: {_addr.GFullAddr()} - Type: {_eventType}");
-    // }
     public string GShort()
     {
-        return ($"Type: {_eventType} - Title: {_title} - Date: {_date}");
+        return ($"Type: {_eventType} \nTitle: {_title} \nDate: {_date}");
     }
 }

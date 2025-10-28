@@ -9,7 +9,7 @@ public class Reception : Event
     }
     public override string GFull()
     {
-        return ($"{GStandard()} - Type: {_eventType} - RSVP Email: {_rsvpEmail}");
+        return ($"{GStandard()} \nType: {_eventType} \nRSVP Email: {_rsvpEmail}");
     }
 }
 

@@ -9,7 +9,7 @@ public class Outdoor : Event
     }
     public override string GFull()
     {
-        return ($"{GStandard()} - Type: {_eventType} - Weather: {_weather}");
+        return ($"{GStandard()} \nType: {_eventType} \nWeather: {_weather}");
     }
 }
 

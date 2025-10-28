@@ -11,7 +11,7 @@ public class Lecture : Event
     }
     public override string GFull()
     {
-        return ($"{GStandard()} - Type: {_eventType} - Speaker: {_speaker} - Capacity: {_capacity}");
+        return ($"{GStandard()} \nType: {_eventType} \nSpeaker: {_speaker} \nCapacity: {_capacity}");
     }
 }
 

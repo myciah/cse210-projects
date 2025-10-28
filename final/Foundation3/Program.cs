@@ -28,6 +28,7 @@ class Program
             Console.WriteLine();
             Console.WriteLine("Short Description: ");
             Console.WriteLine(i.GShort());
+            Console.WriteLine();
         }
      }
 }
