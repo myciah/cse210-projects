@@ -14,10 +14,10 @@ class Program
     static void Main(string[] args)
     {
         Address TA = new Address("123 XYZ Rd", "YYYYYY", "VA", "USA");
-        Reception TR = new Reception("Wedding", "Wedding Reception", "10-27-2025", "6 pm", TA, "@gmail.com");
-        Console.WriteLine(TR.GStandard());
-        Console.WriteLine(TR.GFullReception());
-        Console.WriteLine(TR.GShort());
+        Outdoor TO = new Outdoor("Volleyball", "Bracket for the trophy", "10-27-2025", "6 pm", TA, "Rainy");
+        Console.WriteLine(TO.GStandard());
+        Console.WriteLine(TO.GFullOutdoor());
+        Console.WriteLine(TO.GShort());
     }
 }
  
