@@ -9,6 +9,6 @@ public class Reception : Event
     }
     public string GFullReception()
     {
-        ($"{GStandard()} - Type: {_eventType} - RSVP Email: {_rsvpEmail}");
+        return ($"{GStandard()} - Type: {_eventType} - RSVP Email: {_rsvpEmail}");
     }
 }
