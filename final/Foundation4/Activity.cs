@@ -3,19 +3,21 @@ public abstract class Activity
     private string _date;
     private int _minutes;
     protected string _activityType;
-    public Activity(string date, string _minutes)
+    public Activity(string date, int minutes)
     {
         _date = date;
         _minutes = minutes;
     }
     public string GDate()
     {
-       return date; 
+       return _date; 
     }
     public int GMinutes()
-    return minutes;
+    {
+        return _minutes;
+    }
     public abstract double GDist();
-    public virtual double GSpee()
+    public virtual double GSpeed()
     {
         return (GDist() / _minutes) * 60;
     }
@@ -25,7 +27,7 @@ public abstract class Activity
     }
     public virtual string GSummary()
     {
-        return ($"{_date} {_activityType} ({_minutes} min) Distance {GDist()} miles, Speed {Gspeed()} mph, Pace {GPace() min per mile}");
+        return ($"{_date} {_activityType} ({_minutes} min)- Distance {GDist()} miles, Speed {GSpeed()} mph, Pace: {GPace()} min per mile");
     }
 
 }

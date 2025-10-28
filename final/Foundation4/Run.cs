@@ -10,6 +10,6 @@ public class Run : Activity
     }
     public override double GDist()
     {
-        return dist;
+        return _dist;
     }
 }
