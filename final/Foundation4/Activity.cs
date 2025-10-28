@@ -27,7 +27,7 @@ public abstract class Activity
     }
     public virtual string GSummary()
     {
-        return ($"{_date} {_activityType} ({_minutes} min)- Distance {GDist()} miles, Speed {GSpeed()} mph, Pace: {GPace()} min per mile");
+        return ($"{_date} {_activityType} ({_minutes} min)- Distance {GDist():0.0} miles, Speed {GSpeed():0.0} mph, Pace: {GPace():0.0} min per mile");
     }
 
 }

@@ -9,7 +9,7 @@ public class Swim : Activity
     }
     public override double GDist()
     {
-        return _laps * 50 / 1000 * .62;
+        return _laps * 50 / 1000.0 * .62;
     }
 }
 

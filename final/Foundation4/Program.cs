@@ -11,7 +11,9 @@ using System;
 
         foreach (Activity ac in act)
         {
+            Console.WriteLine();
             Console.WriteLine(ac.GSummary());
+            Console.WriteLine();
         }
      }
  }
