@@ -20,3 +20,18 @@ public class Cycle : Activity
         return (_speed * GMinutes()) / 60;
     }
 }
+
+//The following code was usded to test Cycle.cs in program.cs
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         Cycle TC = new Cycle("27 Oct 2025", 45, 13.0);
+//         List<Activity> act = new List<Activity>();
+//         act.Add(TC);
+//         foreach (Activity a in act)
+//         {
+//             Console.WriteLine(a.GSummary());
+//         }
+//     }
+// }

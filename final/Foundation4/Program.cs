@@ -13,9 +13,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Cycle TC = new Cycle("27 Oct 2025", 45, 13.0);
+        Cycle TS = new Cycle("27 Oct 2025", 60, 2);
         List<Activity> act = new List<Activity>();
-        act.Add(TC);
+        act.Add(TS);
         foreach (Activity a in act)
         {
             Console.WriteLine(a.GSummary());
