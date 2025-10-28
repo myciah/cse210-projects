@@ -13,6 +13,7 @@ class Program
         Console.WriteLine(O1.GShippLabel());
         Console.WriteLine($"Total Cost: $ {O1.GTotCost()}");
         Console.WriteLine();
+        
         Address A2 = new Address("456 BBB st", "Zhengzhou", "Henan", "China");
         Customer C2 = new Customer("Shi-wei Zhu", A2);
         Order O2 = new Order(C2);

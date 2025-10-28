@@ -10,16 +10,19 @@ class Program
         V1.ACom(new Comment("Saul", "Never played the game, but you've inspired me to try it."));
         V1.ACom(new Comment("Emilon", "Fire game, the graphics are sick!"));
         videos.Add(V1);
+
         Video V2 = new Video("The Ways of Dr. Pepper", "Heidi Russell", 387);
         V2.ACom(new Comment("William", "Dr Pepper is easily the best drink around!"));
         V2.ACom(new Comment("Hailie", "I used to think energy drinks were the way, but Dr Pepper clearly got the upper hand."));
         V2.ACom(new Comment("Bethany", "Dr Pepper is so good!"));
         videos.Add(V2);
+
         Video V3 = new Video("Painting", "McKayla Russell", 300);
         V3.ACom(new Comment("Diana", "You're so good with leather paints!"));
         V3.ACom(new Comment("Amber", "You slayed at World Cosplay Summit!"));
         V3.ACom(new Comment("Wakina", "It was so fun to learn from you!"));
         videos.Add(V3);
+
         Video V4 = new Video("Family Home Evening", "AnneMaria Russell", 3600);
         V4.ACom(new Comment("Fay", "Got some great Idea's!"));
         V4.ACom(new Comment("Alex", "Thanks for posting!"));
@@ -27,7 +30,9 @@ class Program
         V4.ACom(new Comment("Asher", "Primary is my favorite!"));
         V4.ACom(new Comment("Leo", "Can't wait to serve a mission!"));
         videos.Add(V4);
-        foreach (Video video in videos){
+
+        foreach (Video video in videos)
+        {
             Console.WriteLine($"Title: {video.GTitle()}");
             Console.WriteLine($"Author: {video.GAuthor()}");
             Console.WriteLine($"Length: {video.GLength()} seconds");
